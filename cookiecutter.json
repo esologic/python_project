@@ -1,0 +1,12 @@
+{
+    "full_name": "Devon Bray",
+    "email": "devon@tvisioninsights.com",
+    "project_name": "Python Project",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "project_short_description": "Python Project contains all of the tools you should need to get started on a new project.",
+    "version": "0.1.0",
+    "create_author_file": "y",
+    "enable_pre_commit_hooks": "y",
+    "create_setup_py": "y",
+    "create_venv_install_reqs": "y"
+}
