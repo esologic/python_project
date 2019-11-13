@@ -6,6 +6,8 @@ import os
 import subprocess
 from typing import Optional
 import sys
+from time import sleep
+
 
 PROJECT_DIRECTORY = os.path.realpath(os.path.curdir)
 
@@ -56,6 +58,8 @@ if __name__ == '__main__':
     if '{{ cookiecutter.enable_pre_commit_hooks }}' != 'y':
         remove_cookiecutter_file('.pre-commit-config.yaml')
     else:
+        # we can't wait on the files to get written to disk, so we sleep to make sure they're there
+        sleep(5)
         run_command("git init")
         run_command("pre-commit install")
         run_command("pre-commit install --hook-type pre-push")

@@ -31,3 +31,9 @@ directory:
 ```
 cookiecutter git@bitbucket.org:devon_tvi/python_project.git
 ```
+
+
+## Notes
+
+* I have had trouble creating these projects in WSL for Windows. The workaround is to create the
+project directory in the `/tmp` directory and the move it to where it should live forever.

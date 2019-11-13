@@ -1,6 +1,6 @@
 {
     "full_name": "Devon Bray",
-    "email": "devon@tvisioninsights.com",
+    "email": "devon@esologic.com",
     "project_name": "Python Project",
     "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
     "project_short_description": "Python Project contains all of the tools you should need to get started on a new project.",
